@@ -1,0 +1,19 @@
+# Centre of the area /rtp picks from.
+teleportation.rtp_origin (RTP centre) v3f 0, 0, 0
+
+# How far from the centre /rtp may pick, per axis (nodes, both directions).
+teleportation.rtp_range_x (RTP range X) int 1000 0 31000
+teleportation.rtp_range_y (RTP range Y) int 150 0 31000
+teleportation.rtp_range_z (RTP range Z) int 1000 0 31000
+
+# How many random columns /rtp tries before giving up.
+teleportation.rtp_attempts (RTP attempts) int 10 1 100
+
+# Seconds a /tpr request waits for an answer.
+teleportation.request_timeout (Request timeout in seconds) int 30 5 600
+
+# Skyblock: Zero: /rtp teleports onto a planet that touches the area.
+teleportation.sbz_planets (Skyblock: Zero planet search) bool true
+
+# Skyblock: Zero: the RTP ranges are multiplied by this when looking for planets.
+teleportation.sbz_range_factor (Planet search range factor) float 1.5 1 10
